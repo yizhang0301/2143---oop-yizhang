@@ -3,16 +3,21 @@
 using namespace std;
 
 int A[100];
-
+//creat data structure —— node
 struct Node
 {
+    //int a value x
     int x;
+    //use it as a pointer
     Node *next;
+    //created a constructor for the Node type
     Node()
     {
+        //make x be -1 if not change it will  no reference to next
         x = -1;
         next = NULL;
     }
+    //This is a constructor to int value
     Node(int n)
     {
         x = n;
@@ -28,6 +33,7 @@ class List
     int Size;
 
   public:
+    // epty the fuction and first being declared
     List()
     {
         Head = Tail = NULL;
@@ -38,7 +44,7 @@ class List
     {
         // allocate new memory and init node
         Node *Temp = new Node(val);
-
+    //check empty or not and add to temp if not empty list it to the end
         if (!Head && !Tail)
         {
             Head = Tail = Temp;
@@ -155,12 +161,12 @@ int main(int argc, char **argv)
 {
     List L1;
     List L2;
-
+//L1
     for (int i = 0; i < 25; i++)
     {
         L1.Push(i);
     }
-
+//L2
     for (int i = 50; i < 100; i++)
     {
         L2.Push(i);
