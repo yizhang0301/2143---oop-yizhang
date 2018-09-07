@@ -1,3 +1,11 @@
+   /**
+     *  Course: CMPS 2143 - OOP
+     *
+     *  Purpose: Calculate the total of 6 checks
+     * 
+     *  @author @author Terry Griffin ; YI ZHANG
+     *  @version 1.1 09/02/18 
+     */
 #include <iostream>
 
 using namespace std;
@@ -24,6 +32,8 @@ struct Node
         next = NULL;
     }
 };
+//class list
+//to make a list of linked to hold integers
 
 class List
 {
@@ -33,13 +43,13 @@ class List
     int Size;
 
   public:
-    // epty the fuction and first being declared
+    // empty the fuction and first being declared
     List()
     {
         Head = Tail = NULL;
         Size = 0;
     }
-
+// to put value to the end of list
     void Push(int val)
     {
         // allocate new memory and init node
@@ -56,7 +66,7 @@ class List
         }
         Size++;
     }
-
+//to put value to the top of list
     void Insert(int val)
     {
         // allocate new memory and init node
@@ -72,7 +82,7 @@ class List
         }
         Size++;
     }
-
+//print the value from the last of the list
     void PrintTail()
     {
         cout << Tail->x << endl;
@@ -93,12 +103,13 @@ class List
     }
 
     // not implemented 
+    //remove the value from the list
     int Pop()
     {
         Size--;
         return 0; //
     }
-
+// to creat a new list to connect L1 and L2
     List operator+(const List &Rhs)
     {
         // Create a new list that will contain both when done
