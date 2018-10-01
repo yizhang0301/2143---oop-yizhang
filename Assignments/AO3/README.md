@@ -29,10 +29,14 @@ Instance Variable:
   A data member in a class with out static modifier.
   
 Member Variable:
+  A variable associated with object and can accessible for all of this methods
 
-Inheritance
+Inheritance:
+  let a new class that can have same behavior as old class
 
-Multiple Inheritance
+Multiple Inheritance:
+  an object or class can inherit characteristics and features from other class
 
-Composition
+Composition：
+  a class references one or more objects of other classes 
 
