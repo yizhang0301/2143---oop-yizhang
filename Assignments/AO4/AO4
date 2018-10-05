@@ -36,7 +36,7 @@ struct gameOfLife {
 		Width = width;
 		Height = height;
 		FrameCount = 0;
-		FrameRate = 0;
+		FrameRate = 5;
 		Window.create(VideoMode(Width, Height), "Game of Life");
 
 		World = new golCell*[height];
@@ -71,11 +71,14 @@ int main() {
 		Event event;
 		while (Gol.Window.pollEvent(event))
 		{
-			Gol.drawWorld();
+		if (Gol.frameCount % Gol.frameRate == 0) {
+			Gol.drawWorld(); 
+		}
+			Gol.drawWorld();{
 			if (event.type == Event::Closed)
 				Gol.Window.close();
 		}
-
+Gol.frameCount++;
 
 	}
 
