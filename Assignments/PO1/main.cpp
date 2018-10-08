@@ -1,11 +1,13 @@
 /**
-     *  Course: CMPS 2143 - OOP
-     *
-     *  Purpose: ArrayVectorClass
-     * 
-     *  @author @author Terry Griffin ; YI ZHANG
-     *  @ 9/14/18 
-     */
+*  Course: CMPS 2143 - OOP
+*  Assignment: P01
+*  Purpose: Simulate the Vector class by pushing and popping values,
+*  then printing size and vector.
+*
+*  @author yizhang
+*  @version 1.1 09/14/18
+*/
+     
 #include <iostream>
 #include <vector>
 #include <array>
