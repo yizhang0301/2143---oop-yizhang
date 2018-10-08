@@ -4,7 +4,7 @@
 *  Purpose: Simulate the Vector class by pushing and popping values,
 *  then printing size and vector.
 *
-*  @author Ponyduelist003
+*  @author yizhang
 *  @version 1.1 09/03/18
 */
 #include <iostream>
