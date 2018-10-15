@@ -1,6 +1,4 @@
 
-
-#include "pch.h"
 #include<fstream>
 #include<string>
 #include <SFML/Graphics.hpp>
@@ -13,7 +11,7 @@ void printHeader(ofstream& outfile);
 
 int main(int argc, char *argv[]) {
 	int rate = 10;
-	GameOfLife Gol(500, 500, rate);
+	GameOfLife Gol(400, 500, rate);
 
 	ifstream infile;
 	ofstream outfile;
@@ -48,8 +46,8 @@ int main(int argc, char *argv[]) {
 }
 void printHeader(std::ofstream& outfile)
 {
-	outfile << "@author yizhang\n";
-	outfile << "Version 1.0 10/14/18\n";
-	outfile << "@github https://github.com/yizhang0301";
-	outfile << "Program 4 - Game of Life\n\n";
+	cout << "@author yizhang\n";
+	cout << "Version 1.0 10/14/18\n";
+	cout <<"@github https://github.com/yizhang0301";
+	cout << "Program 4 - Game of Life\n\n";
 }
