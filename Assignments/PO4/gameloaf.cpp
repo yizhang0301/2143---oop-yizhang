@@ -1,5 +1,4 @@
 #include<string>
-#include "pch.h"
 #include<iostream>
 #include<fstream>
 #include "gameloaf.h"
