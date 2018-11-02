@@ -1,4 +1,12 @@
-
+/**
+*  Course: CMPS 2143 - OOP
+*  Assignment: AO5
+*  Purpose: Recreate Game of Life code
+*
+*  @Author yizhang
+*  @Version 1.1 02/11/18
+*  @github repo: https://github.com/yizhang0301
+*/
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "ck.h"
@@ -29,7 +37,7 @@ int main()
 			window.close();
 		}
 		window.clear();
-		//window.draw(shape);
+		
 		window.display();
 	}
 
