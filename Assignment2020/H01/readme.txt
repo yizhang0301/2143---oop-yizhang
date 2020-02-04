@@ -11,7 +11,7 @@ Composition： a class references one or more objects of other classes
 
 Encapsulation: the way to tie the date and method together
 
-Friends:
+Friends:A friend class can access private and protected members of other class in which it is declared as friend.
 
 Inheritance: let a new class that can have same behavior as old class
 
@@ -29,9 +29,9 @@ Overloading: same function title but different function name(in the same scope)
 
 Polymorphism: same interface to go to different data
 
-Public / Private / Protected:
+Public / Private / Protected: Public is available outside of the class/object, private is available only inside of the object, protected means only a class and its subclasses can access it.
 
-Virtual:
+Virtual: Keywords for functions
 
 
 
