@@ -40,7 +40,11 @@ private:
     int value;       // 1-14      : numeric value used for comparison
     string suitChar; // "♠", "♦", "♣", "♥"
     string rankChar; // Ace, 1 ,2 ,3 ... Q, K
-    string color;    // Spade=blue, Diamond=red, etc.
+    string color;
+    string foreColor;
+    string bColor;
+    string cColor;
+    string nColor;
     public:
     friend ostream;
 
@@ -58,3 +62,25 @@ private:
     void setNumberColor(string color);          // set number color
     void setColors(string fore, string back, string symbol, string number);
 };
+Card::Card(int num) {
+    number = num;
+    suitNum = number / 13;
+    suitChar = suits[suitNum];
+    color = colors[suitNum];
+    rank = number % 13;
+    rankChar = ranks[rank];
+}
+string Card::Repr() {
+    string s = "";
+    s += color + "┌────┐&00 \n";
+    s += color + "│";
+    if (rank == 9) {
+      s += rankColor + rankChar + suitColor + suitChar + color + " │&00 \n";
+    }
+    else{
+      s += rankColor + rankChar + " " + suitColor + suitChar + color + " │&00 \n";
+    }
+    s += color + "└────┘&00 ";
+    return s;
+}
+
